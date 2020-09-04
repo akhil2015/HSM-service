@@ -1,5 +1,5 @@
 import * as express from "express";
-import { HsmWalletService } from "../services/HsmWalletService";
+import { HsmWalletService } from "../services/SecurityModuleService";
 
 export function hsmWalletRoutes(app: express.Application): express.Router {
   const router = app.get("router");

@@ -4,7 +4,7 @@ import { Database } from "./Database";
 import express from "express";
 import { hsmWalletRoutes } from "./routes/hsmWalletRoutes";
 import http from "http";
-import { HsmWalletService } from "./services/HsmWalletService";
+import { HsmWalletService } from "./services/SecurityModuleService";
 
 const config = new Config();
 const db = new Database(config);
