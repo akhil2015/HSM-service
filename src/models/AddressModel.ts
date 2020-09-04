@@ -1,4 +1,4 @@
-import * as sequelize from "sequelize";
+import * as sequelize from 'sequelize';
 
 export class AddressModel {
   public btcAddress: string;
@@ -8,17 +8,8 @@ export class AddressModel {
   public ecdsaY: string;
 
   public static schema = {
-    privateKeyId: {
-      type: sequelize.STRING,
-      allowNull: false
-    },
-    publicKeyId: {
-      type: sequelize.STRING,
-      allowNull: false
-    },
-    ecPoint: {
-      type: sequelize.STRING,
-      primaryKey: true
-    }
+    privateKeyId: {type: sequelize.STRING, allowNull: false},
+    publicKeyId: {type: sequelize.STRING, allowNull: false},
+    ecPoint: {type: sequelize.STRING, primaryKey: true}
   };
 }
