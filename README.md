@@ -12,7 +12,7 @@ Following are only required if you are running this repository locally
     - Mac:
     ```sh
         brew install softhsm
-        softhsm2-util --init-token --slot 0 --label "tokenvaultTest" --pin 9540 --so-pin 9540
+        softhsm2-util --init-token --slot 0 --label "tokenTest" --pin 9540 --so-pin 9540
     ```
 
 ## Configuration Instructions
