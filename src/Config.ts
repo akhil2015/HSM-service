@@ -10,9 +10,13 @@ export class Config {
     dialect: "mysql",
   };
 
-  // dev simulation
+  /**
+   * dev simulation
+   * for mac: library = "/usr/local/lib/softhsm/libsofthsm2.so"
+   * for linux: library = "/usr/lib/softhsm/libsofthsm2.so"
+   */
   public SOFTHSM_CONFIG = {
-    library: "/usr/local/lib/softhsm/libsofthsm2.so",
+    library: "/usr/lib/softhsm/libsofthsm2.so",
     name: "SoftHSMv2",
     slot: 0,
     readWrite: true,
